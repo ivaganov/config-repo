@@ -1,3 +1,28 @@
 zeus:
     cloud:
         name: POC
+
+spring:
+  boot:
+      notify:
+        to: ivaganov@gmail.com
+  mail:
+# TODO: move password to protected storage
+    username: ivaganov@gmail.com
+    password: D0nR1ver
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        debug: true
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+jackson:
+  serialization:
+    indent_output: true
+
+endpoints:
+  health:
+    sensitive: false
