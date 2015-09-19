@@ -1,0 +1,6 @@
+settings:
+    var1: hello
+    var2: world
+    test:
+        mode: true
+        path: /tmp
